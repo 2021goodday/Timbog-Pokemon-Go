@@ -1,0 +1,610 @@
+@import "compass/css3";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:800");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-size: 160% 200%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.product-image {
+  float: left;
+  width: 20%;
+}
+
+.product-details {
+  float: left;
+  width: 37%;
+}
+
+.product-price {
+  float: left;
+  width: 12%;
+}
+
+.product-line-price {
+  float: left;
+  width: 30%;
+  text-align: left;
+  padding-left: 100px;
+}
+
+/* This is used as the traditional .clearfix class */
+.group:before,
+.transaction-page:before,
+.column-labels:before,
+.product:before,
+.totals-item:before,
+.group:after,
+.transaction-page:after,
+.column-labels:after,
+.product:after,
+.totals-item:after {
+  content: "";
+  display: table;
+}
+
+.group:after,
+.transaction-page:after,
+.column-labels:after,
+.product:after,
+.totals-item:after {
+  clear: both;
+}
+
+.group,
+.transaction-page,
+.column-labels,
+.product,
+.totals-item {
+  zoom: 1;
+}
+
+.product .product-price:before,
+.product .product-line-price:before,
+.totals-value:before {
+  content: "₱";
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  background: #eee;
+  background-image: url(https://static.prod.pokemon.com/images/pikachu_pattern.png);
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.container {
+  width: 77%;
+  margin: 0 auto;
+  padding: 2% 0;
+  margin-bottom: 5em;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.heading {
+  padding: 1em 0;
+  border-bottom: 1px solid #000000;
+}
+
+.heading h1 {
+  font-family: "Droid Serif", serif;
+  font-size: 2em;
+  float: left;
+}
+
+.heading a.continue:link,
+.heading a.continue:visited {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.015em;
+  font-size: 0.75em;
+  padding: 1em;
+  color: #000000;
+  background: #42b9a3;
+  font-weight: bold;
+  border-radius: 50px;
+  float: right;
+  text-align: right;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.heading a.continue:after {
+  content: "\276f";
+  padding: 0.5em;
+  position: relative;
+  right: 0;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  -ms-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.heading a.continue:hover,
+.heading a.continue:focus,
+.heading a.continue:active {
+  background: #055c4d;
+}
+
+.heading a.continue:hover:after,
+.heading a.continue:focus:after,
+.heading a.continue:active:after {
+  right: -10px;
+}
+
+label {
+  color: #000000;
+}
+
+.transaction-page {
+  padding-top: 35px;
+}
+
+/* Column headers */
+.column-labels label {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px;
+  font-size: 0.75em;
+}
+
+.column-labels .product-image,
+.column-labels .product-details,
+.column-labels .product-removal {
+  text-indent: -9999px;
+}
+
+.special {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+}
+
+.special .specialContent {
+  padding: 0.5em 1em 0.6em;
+  display: block;
+  border-top: 1px solid #000000;
+}
+
+.special .specialContent:before {
+  content: "\21b3";
+  font-size: 1.5em;
+  margin-right: 1em;
+  margin-left: 90px;
+  color: #000000;
+  font-family: helvetica, arial, sans-serif;
+}
+
+
+.product {
+  padding-top: 13px;
+}
+
+.product .product-image {
+  text-align: center;
+}
+
+.product .product-image img {
+  width: 100px;
+}
+
+.product .product-details .product-title {
+  margin-right: 20px;
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+}
+
+.product .product-details .product-description {
+  margin: 5px 20px 5px 0;
+  line-height: 1.4em;
+}
+
+.product .product-quantity input {
+  width: 40px;
+}
+
+.product .remove-product {
+  border: 0;
+  padding: 4px 8px;
+  background-color: #c66;
+  color: #000000;
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+  font-size: 12px;
+  border-radius: 10px;
+}
+
+.product .remove-product:hover {
+  background-color: #a44;
+  cursor: pointer;
+}
+
+.float-parent-element {
+  width: 100%;
+  margin-top: 2.5em;
+}
+
+.float-child-element {
+  float: left;
+  width: 50%;
+}
+
+.page-background {
+  background-color: white;
+  opacity: 0.8;
+}
+
+/* Totals section */
+.totals {
+  float: right;
+  width: 100%;
+}
+
+.totals .totals-item {
+  order: 1;
+  float: left;
+  clear: both;
+  padding: 0.5em;
+  font-size: 0.85em;
+  color: #000000;
+  width: 100%;
+}
+
+.totals .totals-item label {
+  float: left;
+  clear: both;
+  width: 78%;
+  text-align: right;
+}
+
+.totals .totals-item .totals-value {
+  float: left;
+  width: 22%;
+  text-align: right;
+}
+
+.total-label {
+  font-size: 0.85em;
+  color: #000000;
+}
+
+.totals .totals-item-total {
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.promoCode {
+  border: 2px solid #42b9a3;
+  float: left;
+  width: 47%;
+  padding: 2%;
+  margin-right: 50%;
+
+}
+
+.promoCode label {
+  display: block;
+  width: 100%;
+  font-style: italic;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  letter-spacing: -0.025em;
+  color: black;
+}
+
+.promoCode input {
+  width: 80%;
+  font-size: 0.8em;
+  padding: 0.5em;
+  float: left;
+  border: 1px solid #dadada;
+}
+
+.promoCode input:active,
+.promoCode input:focus {
+  outline: 0;
+}
+
+.promoCode .btn {
+  font-size: 0.85em;
+  padding: 0.5em 2em;
+}
+
+.promoCode a.btn {
+  float: left;
+  width: 12%;
+  padding: 0.39em 0;
+  border-radius: 0 1em 1em 0;
+  text-align: center;
+  border: 1px solid #42b9a3;
+}
+
+.promoCode a.btn:hover {
+  border: 1px solid #055c4d;
+  background: #055c4d;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.015em;
+  font-size: 1em;
+  padding: 1em 3em;
+  color: #fff;
+  background: #42b9a3;
+  font-weight: bold;
+  border-radius: 50px;
+  float: right;
+  text-align: right;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.btn:after {
+  content: "\276f";
+  padding: 0.5em;
+  position: relative;
+  right: 0;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  -ms-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background: #055c4d;
+}
+
+.btn:hover:after,
+.btn:focus:after,
+.btn:active:after {
+  right: -10px;
+}
+
+.promoCode .btn {
+  font-size: 0.85em;
+  padding: 0.5em 2em;
+}
+
+.itemNumber {
+  font-size: 0.75em;
+  color: #000000;
+  margin-bottom: 0.5em;
+}
+
+p.stockStatus {
+  color: #82ca9c;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+
+p.stockStatus.out {
+  color: #f69679;
+}
+
+
+@media screen and (max-width: 650px) {
+  .transaction-page {
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+
+  .column-labels {
+    display: none;
+  }
+
+  .product-image {
+    float: right;
+    width: auto;
+  }
+
+  .product-image img {
+    margin: 0 0 10px 10px;
+  }
+
+  .product-details {
+    float: none;
+    margin-bottom: 10px;
+    width: auto;
+  }
+
+  .product-price {
+    clear: both;
+    width: 70px;
+  }
+
+  .product-quantity {
+    width: 100px;
+  }
+
+  .product-quantity input {
+    margin-left: 20px;
+  }
+
+  .product-quantity:before {
+    content: "x";
+  }
+
+  .product-removal {
+    width: auto;
+  }
+
+  .product-line-price {
+    float: left;
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .product-removal {
+    float: right;
+  }
+
+  .product-line-price {
+    float: left;
+    clear: left;
+    width: auto;
+    margin-top: 10px;
+  }
+
+  .product .product-line-price:before {
+    content: "Item Total: ₱";
+  }
+
+  .totals .totals-item label {
+    width: 60%;
+  }
+
+  .totals .totals-item .totals-value {
+    width: 40%;
+  }
+}
+
+.product {
+  padding: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(0.10);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+.footer{
+	background-color: #195471;
+    padding: 70px 0;
+    display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-top: 3px;
+  width: 100%; 
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #ffffff;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255, 255, 255, 0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+/* Sean Pica */
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.container {
+  margin-top: 5em;
+}
+.footer-col li img {
+  max-width: 80%;
+}
