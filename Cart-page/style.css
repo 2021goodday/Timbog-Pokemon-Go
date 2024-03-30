@@ -695,3 +695,6 @@ p.stockStatus.out {
       width: 100%;
   }
   }
+.footer-col li img {
+  max-width: 80%;
+}
