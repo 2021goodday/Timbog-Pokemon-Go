@@ -319,3 +319,9 @@ body, html {
     width: 100%;
 }
 }
+.navbar {
+   font-size: 17px;
+}
+.navbar-brand {
+   font-size: 19px;
+}
