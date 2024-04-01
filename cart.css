@@ -125,7 +125,7 @@ body {
   font-size: 0.75em;
   padding: 1em;
   color: #fff;
-  background: #42b9a3;
+  background: #ffc107;
   font-weight: bold;
   border-radius: 50px;
   float: right;
@@ -152,7 +152,7 @@ body {
 .heading a.continue:hover,
 .heading a.continue:focus,
 .heading a.continue:active {
-  background: #055c4d;
+  background: #be8f02;
 }
 
 .heading a.continue:hover:after,
@@ -343,12 +343,12 @@ label {
   padding: 0.39em 0;
   border-radius: 0 1em 1em 0;
   text-align: center;
-  border: 1px solid #42b9a3;
+  border: 1px solid #ffc107;
 }
 
 .promoCode a.btn:hover {
-  border: 1px solid #055c4d;
-  background: #055c4d;
+  border: 1px solid #be8f02;
+  background: #be8f02;
 }
 
 .btn:link,
@@ -359,7 +359,7 @@ label {
   font-size: 1em;
   padding: 1em 3em;
   color: #fff;
-  background: #42b9a3;
+  background: #ffc107;
   font-weight: bold;
   border-radius: 50px;
   float: right;
@@ -386,7 +386,7 @@ label {
 .btn:hover,
 .btn:focus,
 .btn:active {
-  background: #055c4d;
+  background: #be8f02;
 }
 
 .btn:hover:after,
