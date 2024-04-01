@@ -142,7 +142,6 @@ body {
 
 .container {
   background-color: rgba(242, 242, 242, 0.7);
-  /* Adjust the last value (alpha) to control translucency */
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
   border-radius: 3px;
@@ -180,7 +179,7 @@ label {
 }
 
 .btn:hover {
-  background-color: #45a049;
+  background-color: #be8f02;
 }
 
 a {
@@ -196,17 +195,12 @@ span.price {
   color: grey;
 }
 
-/* Add this CSS rule to adjust the size of product images */
 .product-image img {
   max-width: 100%;
-  /* Ensure the image doesn't exceed its container */
   height: auto;
-  /* Maintain aspect ratio */
   max-height: 100px;
-  /* Adjust the maximum height as needed */
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
 @media (max-width: 800px) {
   .row {
     flex-direction: column-reverse;
@@ -217,40 +211,30 @@ span.price {
   }
 }
 
-/* Additional CSS for the logo */
 .logo-container {
   text-align: center;
-  /* Center the logo horizontally */
   margin-bottom: 20px;
-  /* Add space between the logo and other content */
   margin-top: 20px;
-  /* Adjust the top margin to control the distance from the content above */
 }
 
 .logo-container img {
   max-width: 150px;
-  /* Adjust the maximum width of the logo */
   height: auto;
-  /* Maintain aspect ratio */
   animation: zoomInOut 5s ease infinite alternate;
-  /* Apply the animation */
 }
 
-/* Define the zoom in and out animation */
 @keyframes zoomInOut {
   0% {
     transform: scale(0.10);
-    /* Initial scale */
   }
 
   100% {
     transform: scale(1.5);
-    /* Zoom in to 120% of original size */
   }
 }
 
 .btn-primary {
-  background: linear-gradient(45deg, #2f9280 6%, #16a085 30%, #bfa643 49%, #80d0c7 66%, #2b86c5 84%, #055c4d 99%);
+  background: #ffc107;
   color: white;
   padding: 10px;
   margin: 10px 0;
@@ -260,7 +244,6 @@ span.price {
   cursor: pointer;
   font-size: 20px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
-  /* Added transform transition */
   animation: backgroundAnimation 5s linear infinite;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -276,6 +259,7 @@ span.price {
 .footer {
   background-color: #195471;
   padding: 70px 0;
+  width: 100%;
 }
 
 .footer-col {
